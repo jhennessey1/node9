@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="translateMod">
+<head>
+	<title>Node 9</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	<script type="text/javascript" src="../javascripts/translateMod.js"></script>
+	<script type="text/javascript" src="../javascripts/translateCtrl.js"></script>
+	<script type="text/javascript" src="../javascripts/translateFac.js"></script>
+</head>
+<body ng-controller="translateCtrl">
+	<h1>{{greeting}}</h1>
+
+	<form>
+		<input name="languageFrom" placeholder="Starting Language"></input>
+		<input name="languageTo" placeholder="Ending Language"></input>
+		<input type="submit" value="Submit"></input>
+	</form>
+</body>
+</html>
