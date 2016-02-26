@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="translateMod">
+<head>
+	<title>Node 9</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	<script type="text/javascript" src="../javascripts/translateMod.js"></script>
+	<script type="text/javascript" src="../javascripts/translateCtrl.js"></script>
+	<script type="text/javascript" src="../javascripts/translateFac.js"></script>
+</head>
+<body ng-controller="loginCtrl">
+	
+	<h1>Existing Users</h1>
+        <form ng-submit="login()">
+            <input type="text" ng-model="loginForm.username" placeholder="Username"/>
+            <input type="password" ng-model="loginForm.password" placeholder="Password"/>
+            <input type="submit"/>
+        </form>
+
+        <h1>Register</h1>
+        <form ng-submit="signup()">
+            <input type="text" ng-model="signupForm.username" placeholder="Username"/>
+            <input type="password" ng-model="signupForm.password" placeholder="Password"/>
+            <input type="submit"/>
+        </form>
+
+</body>
+</html>

@@ -10,10 +10,17 @@
 <body ng-controller="translateCtrl">
 	<h1>{{greeting}}</h1>
 
-	<form>
-		<input name="languageFrom" placeholder="Starting Language"></input>
-		<input name="languageTo" placeholder="Ending Language"></input>
+	<form ng-submit="translateThis()">
+		<select ng-model="translation.languageFrom" ng-options="language.code as language.name for language in languages"></select>
+		<input ng-model="translation.text" placeholder="text"></input>
+		<select ng-model="translation.languageTo" ng-options="language.code as language.name for language in languages"></select>
+		
 		<input type="submit" value="Submit"></input>
 	</form>
+
+	<h2>{{showText}}</h2>
+
+
+	<a href="/login"><button>Login or Create an Account</button></a>
 </body>
 </html>

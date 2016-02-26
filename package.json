@@ -18,10 +18,15 @@
   },
   "homepage": "https://github.com/jhennessey1/node9#readme",
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
     "google-translate": "^1.0.6",
-    "mongoose": "^4.4.5",
-    "morgan": "^1.7.0"
+    "mongoose": "^4.1.11",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.0",
+    "passport-facebook": "^2.1.0",
+    "passport-local": "^1.0.0"
   }
 }
